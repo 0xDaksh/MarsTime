@@ -1,6 +1,8 @@
 # MarsTime - What is Required?
 A Project by Daksh Miglani (https://dakshmiglani.com)
 
+How To Calculate Mars-Time? (Thanks to @jtauber)
+
 1. Formula of Martian Time Central (Prime Meredian) - (24 hours * Martian Sol Date) modulo 24
 2. Calculate Earth Time in milliseconds with JS (new Date().getTime())
 3. Get JDUT - 2440587.5 + (miliseconds / 8.64E7)
