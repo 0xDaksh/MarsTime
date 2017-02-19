@@ -16,19 +16,27 @@
         -ms-transition:.1s;
         -moz-transition:.1s;
         -webkit-transition:.1s;
+        color: #fff;
       }
       .here:hover {
         font-weight: 700;
       }
       h1 {
         font-size: 100px;
+        color: #fff;
       }
       h3 {
         font-family: 'Open Sans';
         font-weight: 300;
         font-size: 30px;
+        color: #fff;
       }
-
+      body {
+        background-image: url(http://media-channel.nationalgeographic.com/media/uploads/photos/content/photo/2016/08/29/MARS_Helmets_DL.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+      }
     </style>
   </head>
   <body>
@@ -52,6 +60,9 @@
 
     <div class="center container">
       <h1 id="time" style="font-family: 'Luckiest Guy';"></h1>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Check Martian Time at https://mars.dakshmiglani.com" data-via="Dakshster" data-hashtags="MartianTime" data-related="Dakshster" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <a href="https://twitter.com/Dakshster" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @Dakshster</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <p id="earth" class="here"></p>
       <p id="mili" class="here"></p>
       <p id="jdut" class="here"></p>
       <p id="jdtt" class="here"></p>
@@ -75,8 +86,9 @@
       </div>
       <div class="footer-copyright"><div id="footText" class="container" style="text-align: center;"><a href="https://dakshmiglani.com" target="_blank" style="color: rgb(255, 255, 255);">© 2017 Daksh Miglani. All Rights Reserved. Created by Daksh Miglani.</a></div></div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="./scripts/jquery.js" charset="utf-8"></script>
+    <script src="./scripts/moment.min.js" charset="utf-8"></script>
+    <script src="./scripts/materialize.min.js"></script>
     <script src="./scripts/daksh.js" charset="utf-8"></script>
   </body>
 </html>

@@ -32,12 +32,14 @@ function comma(n) {
 
 function getTime() {
   var current = new Date().getTime();
+  var earth = moment().format('MMMM Do YYYY, h:mm:ss a');
   var jdut = 2440587.5 + (current / 8.64E7);
   var jdtt = jdut + (tai + 32.184) / 86400;
   var j2000 = jdtt - 2451545;
   var msd = (((j2000 - 4.5) / 1.027491252) + 44796.0 - 0.00096);
   var mtc = (24 * msd) % 24;
    $('#time').text(toTime(mtc));
+   $('#earth').text('Time on Earth: ' + earth);
    $('#mili').text('Miliseconds: ' + comma(current));
    $("#jdut").text('JDUT: ' + comma(jdut.toFixed(5)));
    $("#jdtt").text('JDTT: ' +comma(jdtt.toFixed(5)));
