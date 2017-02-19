@@ -37,6 +37,12 @@
         flex-direction: column;
         flex: 1 0 auto;
       }
+      li {
+          list-style-type: none;
+      }
+      .flow-text {
+        font-size: 20px;
+      }
     </style>
   </head>
   <body>
@@ -57,7 +63,6 @@
       </div>
     </nav>
 
-
     <div class="center grey darken-4">
       <h1 id="time" style="font-family: 'Luckiest Guy';"></h1>
       <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Check Martian Time at" data-via="Dakshster" data-hashtags="MartianTime" data-related="Dakshster" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -67,6 +72,17 @@
       <p id="jdut" class="here"></p>
       <p id="jdtt" class="here"></p>
       <p id="j2000" class="here"></p>
+      <br>
+    </div>
+    <div class="center grey darken-4">
+      <br>
+      <h2 class="white-text">What does all this Mean?</h2>
+      <p class="flow-text white-text">I Calculate the Mars Time Live in Your Browser Using Formulaes and Algorithms, Read How I do it Below!</p>
+      <li><p class="flow-text white-text">1. Firstly, This Website grabs the time in milliseconds using JavaScript in Your Browser.</p></li>
+      <li><p class="flow-text white-text">2. Secondly, It converts that value into JDUT, Which is the number of days since the Last Unix Epoch Occured.</p></li>
+      <li><p class="flow-text white-text">3. Thirdly, It converts that value into JDTT, Which is the Julian Date Instead of the UTC Time in Which We add a leap of Seconds.</p></li>
+      <li><p class="flow-text white-text">3. Fourthly, It converts that value into J2000, This is the Number of days since 12:00 January 1 2000, When the Epoch Occured in Terestrial Time.</p></li>
+      <li><p class="flow-text white-text">3. Lastly It uses that to get MSD, Which in the end of the day is used to get the MTC (Martian Time) as Per the Formula and Get's us the Martian Time.</p></li>
     </div>
     <footer id="footer" class="page-footer red darken-1">
       <div class="container">
