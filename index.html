@@ -3,8 +3,80 @@
   <head>
     <meta charset="utf-8">
     <title>Mars Time</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,700,300,400">
+    <style media="screen">
+      .here {
+        font-family: 'Open Sans';
+        font-weight: 300;
+        font-size: 25px;
+        -o-transition:.1s;
+        -ms-transition:.1s;
+        -moz-transition:.1s;
+        -webkit-transition:.1s;
+      }
+      .here:hover {
+        font-weight: 700;
+      }
+      h1 {
+        font-size: 100px;
+      }
+      h3 {
+        font-family: 'Open Sans';
+        font-weight: 300;
+        font-size: 30px;
+      }
+
+    </style>
   </head>
   <body>
+    <nav>
+      <div class="nav-wrapper red darken-1" style="padding-left: 5%; padding-right: 5%;">
+        <a href="/" class="brand-logo" style="font-family: 'Luckiest Guy'">Mars Time</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="/about">Why?</a></li>
+          <li><a href="https://dakshmiglani.com">About Daksh</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-nav" style="transform: translateX(-100%);">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="/about">Why?</a></li>
+          <li><a href="https://dakshmiglani.com">About Daksh</a></li>
+        </ul>
+      </div>
+    </nav>
 
+
+    <div class="center container">
+      <h1 id="time" style="font-family: 'Luckiest Guy';"></h1>
+      <p id="mili" class="here"></p>
+      <p id="jdut" class="here"></p>
+      <p id="jdtt" class="here"></p>
+      <p id="j2000" class="here"></p>
+    </div>
+    <footer id="footer" class="page-footer red darken-1">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m9 l10">
+            <h5 class="white-text">How Accurate Is Daksh's Martian Time Calculator ?</h5>
+            <p class="grey-text text-lighten-4">It's almost a 100% accurate until and unless the tai-offset and some concepts of physics change, It relies on Formulas and Algorithms Sourced and Obtained by WikiPedia and a few Other External Sources.</p>
+          </div>
+          <div class="col s12 m3 l2">
+            <h5 class="white-text">Know More</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="./about" target="_blank">Why?</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://dakshmiglani.com" target="_blank">Visit Daksh!</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright"><div id="footText" class="container" style="text-align: center;"><a href="https://dakshmiglani.com" target="_blank" style="color: rgb(255, 255, 255);">© 2017 Daksh Miglani. All Rights Reserved. Created by Daksh Miglani.</a></div></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="./scripts/daksh.js" charset="utf-8"></script>
   </body>
 </html>
