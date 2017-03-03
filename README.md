@@ -1,5 +1,5 @@
 # MarsTime - What is Required?
-A Project by Daksh Miglani (https://dakshmiglani.com)
+A Project by Daksh Miglani (https://dak.sh)
 
 How To Calculate Mars-Time? (Thanks to @jtauber)
 
