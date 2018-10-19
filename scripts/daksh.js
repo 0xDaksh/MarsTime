@@ -5,7 +5,7 @@
  */
 
 // tai offset is updated frequently, currently it is 37
-var tai = 37;
+const tai = 37;
 
 function toTime(h) { // by @JTauber
     var x = h * 3600;
