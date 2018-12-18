@@ -1,0 +1,14 @@
+{
+  "name": "MarsTime",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DakshMiglani/MarsTime.git",
+  "author": "Daksh Miglani <hello@dak.sh>",
+  "license": "MIT",
+  "scripts": {
+  	"dev": "parcel index.html -p 3000"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.10.3"
+  }
+}
