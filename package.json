@@ -6,7 +6,8 @@
   "author": "Daksh Miglani <hello@dak.sh>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.html -p 3000"
+    "dev": "parcel index.html -p 3000",
+    "build": "NODE_ENV=production parcel build index.html"
   },
   "dependencies": {
     "date-fns": "^1.30.1",
