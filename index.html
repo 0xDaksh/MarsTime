@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mars Time - A Live time calculator for Martians!</title>
+	<title>Mars Time - A Live time calculator for Martians visiting Earth!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <style> 
+    #clocksz {
+      font-size: 110px;
+    }
+    @media only screen and (max-width: 565px) {
+      #clocksz {
+        font-size: 60px;
+      }
+    }
+  </style>
 </head>
 <body>
-
+  <div id="app"></div>
+  <script src="./app.js"></script>
 </body>
 </html>
