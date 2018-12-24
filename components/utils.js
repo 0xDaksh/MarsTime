@@ -31,7 +31,7 @@ export const getTime = () => {
 
 const getMarsTime = (mtc) => {
   const sec = mtc * 3600;
-  let hh = Math.floor(mtc/3600);
+  let hh = Math.floor(sec/3600);
   if (hh < 10) hh = "0" + hh;
   
   let mm = Math.floor((sec % 3600) / 60);
